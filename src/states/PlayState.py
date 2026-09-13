@@ -293,13 +293,13 @@ class PlayState(BaseState):
 
                     if ball.catching_paddle is not None:
                         vx = ball.catching_paddle.vx
-                        # Garantizar un vx minimo para evitar tiro vertical (sumar un poco de dificultad)
+                        # Guarantee a minimum vx to avoid perfectly vertical shots (adds a bit of difficulty)
                         if vx == 0:
                             vx = random.choice([-1, 1]) * random.randint(10, 15)
                         ball.vx = vx
                         ball.catching_paddle = None
 
-            # Si no hay pelota atrapada space tambien pausa el juego
+            # If no ball is caught, SPACE also pauses the game
             if not launched:
                 self.state_machine.change(
                     "pause",

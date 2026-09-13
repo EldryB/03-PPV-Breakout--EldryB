@@ -14,5 +14,5 @@ class TwoPaddle(PowerUp):
         play_state.paddle2.x = play_state.paddle.x
         play_state.paddle2.y = play_state.paddle.y
         play_state.paddle2_is_active = True
-        play_state.paddle2_timer = 10.0 # El efecto durará 10 segundos
+        play_state.paddle2_timer = 10.0 # The effect will last 10 seconds
         self.active = False

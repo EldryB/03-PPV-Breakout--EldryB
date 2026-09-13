@@ -79,10 +79,10 @@ class Paddle:
             if self.shoot_timer <= 0:
                 self.has_canon = False
 
-    def get_canon_left_rect(self) -> pygame.Rect: # Cambia None por pygame.Rect
+    def get_canon_left_rect(self) -> pygame.Rect: 
         return pygame.Rect(round(self.lcanonx), round(self.lcanony), settings.CANON_WIDTH, settings.CANON_HEIGHT)
 
-    def get_canon_right_rect(self) -> pygame.Rect: # Cambia None por pygame.Rect
+    def get_canon_right_rect(self) -> pygame.Rect: 
         return pygame.Rect(round(self.rcanonx), round(self.rcanony), settings.CANON_WIDTH, settings.CANON_HEIGHT)
 
     def render(self, surface: pygame.Surface) -> None:

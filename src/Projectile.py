@@ -34,7 +34,3 @@ class Projectile:
             (255, 200, 50),  
             (self.x, self.y, self.width, self.height)
         )
-        
-        # Opción 2: Si decides agregar un sprite en settings.py luego, 
-        # puedes borrar el pygame.draw.rect y descomentar esto:
-        # surface.blit(settings.TEXTURES["projectile"], (self.x, self.y))
